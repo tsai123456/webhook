@@ -18,7 +18,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.102'
+        dotnet-version: '3.1.201'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -32,4 +32,4 @@ jobs:
         app-name: 'linewebhookdemo'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_0802258b33534212958837c589898f18 }}
-        package: ${{env.DOTNET_ROOT}}/myapp 
+        package: ${{env.DOTNET_ROOT}}/myapp
