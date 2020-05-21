@@ -29,7 +29,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v1
       with:
-        app-name: 'linewebhookDemo'
+        app-name: 'happy learn 123'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_0802258b33534212958837c589898f18 }}
         package: ${{env.DOTNET_ROOT}}/myapp
