@@ -29,7 +29,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v1
       with:
-        app-name: 'linewebhookdemo'
+        app-name: 'linewebhookdemo11'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_1c2d6cbd15984a6f99b6ccf6035d5e7e }}
         package: ${{env.DOTNET_ROOT}}/myapp
